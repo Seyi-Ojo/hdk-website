@@ -1,0 +1,124 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    padding: 50px;
+    padding-top: 0;
+}
+
+img {
+    max-width: 100%;
+}
+.navigation_bar{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 0%;
+    padding: 4px 4px;
+    justify-content: space-between;
+    align-items: center;
+    /* border-radius: 4px; */
+}
+.navigation_bar a{
+    color: white;
+    text-decoration: none;
+}
+.main_nav_bar{
+    color: purple;
+    font-size: 30px;
+}
+.other_nav_bars{
+    padding-top: 10px;
+    float: right;
+}
+.other_nav_bars ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    font-weight: 200;
+}
+a:hover {
+    color: purple;
+}
+
+.container {
+    margin: 48px auto;
+    width: min(90%, 650px);
+    background-color: #fff;
+    padding-right: 24px;
+    border: 5px solid purple;
+}
+
+.container > .box {
+    display: flex;
+    gap: 20px;
+}
+
+.contactBox {
+    padding-bottom: 20px;
+}
+
+.img-container {
+    flex-basis: 40%;
+}
+
+.contactBox {
+    flex-basis: 60%;
+}
+
+h2 {
+    text-align: center;
+    color: purple;
+}
+
+.box img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+input, textarea, select {
+    width: 100%;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+input,select{
+    padding-inline: 14px;
+    padding-block: 8px;
+}
+
+button {
+    background-color: purple;
+    border: none;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding-block: 14px;
+    font-size: 18px;
+    cursor: pointer;
+}
+ 
+@media(max-width: 480px){
+    .container {
+        padding-left: 24px;
+    }
+    .container > .box {
+        flex-direction: column;
+       
+    }
+
+    .img-container,.contactBox {
+        flex-basis: 100%;
+    }
+}

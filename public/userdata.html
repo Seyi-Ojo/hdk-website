@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayowa Oluwaseyi Ojo's UserData Site</title>
+    <link rel = "stylesheet" href = "./css/userdata.css" />
+
+
+</head>
+<body>
+    <div class="navigation_bar">
+
+        <div class="main_nav_bar">
+                <h2>🌩️🧚‍♀️'s Portfolio</h2>
+        </div>
+
+        <div class="other_nav_bars">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="https://docs.google.com/document/d/1s3tQuD9sPnuPI8n4Jq0_RCVtC_fPPyjPE2sFcXlVgOo/edit" target="_blank">My CV</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                    
+            </ul>
+        </div>
+
+    </div>
+
+  
+
+    <div class="container">
+        <div class="box">
+            <div class="img-container">
+                <img src="./assets/a_picture_of_me.jpg" alt="Mayowa Ojo">
+            </div>
+            <div class="contactBox">
+                <h2>Contact Me</h2>
+                <form action="/form" method="post" enctype="application/x-www-form-urlencoded">
+                    <div class="form-group">
+                        <label for="name">
+                            Name
+                        </label>
+                        <input type="text" placeholder="Your name" name="name" id="name" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            Email
+                        </label>
+                        <input type="email" placeholder="Your Email" name="email" id="email" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback">
+                           Feedback
+                        </label>
+                        <textarea name="feedback" id="feedback" required></textarea>
+                    </div>
+                    <div class="form-group">
+                       
+                        <select>
+                            placeholder="Urgency?"
+                            <option value = "urgent">Urgent</option>
+                            <option value = "very urgent">Very urgent</option>
+                            <option value = "can wait">Can wait</option>
+                        </select>
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+       
+      
+</body>
+</html>
